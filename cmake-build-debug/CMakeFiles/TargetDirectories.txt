@@ -1,0 +1,3 @@
+C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir
+C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
