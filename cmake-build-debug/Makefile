@@ -128,6 +128,78 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/build
 .PHONY : 2DSnakeGame/fast
 
+Bait.obj: Bait.cpp.obj
+.PHONY : Bait.obj
+
+# target to build an object file
+Bait.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Bait.cpp.obj
+.PHONY : Bait.cpp.obj
+
+Bait.i: Bait.cpp.i
+.PHONY : Bait.i
+
+# target to preprocess a source file
+Bait.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Bait.cpp.i
+.PHONY : Bait.cpp.i
+
+Bait.s: Bait.cpp.s
+.PHONY : Bait.s
+
+# target to generate assembly for a file
+Bait.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Bait.cpp.s
+.PHONY : Bait.cpp.s
+
+Game.obj: Game.cpp.obj
+.PHONY : Game.obj
+
+# target to build an object file
+Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Game.cpp.obj
+.PHONY : Game.cpp.obj
+
+Game.i: Game.cpp.i
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+Snake.obj: Snake.cpp.obj
+.PHONY : Snake.obj
+
+# target to build an object file
+Snake.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Snake.cpp.obj
+.PHONY : Snake.cpp.obj
+
+Snake.i: Snake.cpp.i
+.PHONY : Snake.i
+
+# target to preprocess a source file
+Snake.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Snake.cpp.i
+.PHONY : Snake.cpp.i
+
+Snake.s: Snake.cpp.s
+.PHONY : Snake.s
+
+# target to generate assembly for a file
+Snake.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Snake.cpp.s
+.PHONY : Snake.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 2DSnakeGame
+	@echo ... Bait.obj
+	@echo ... Bait.i
+	@echo ... Bait.s
+	@echo ... Game.obj
+	@echo ... Game.i
+	@echo ... Game.s
+	@echo ... Snake.obj
+	@echo ... Snake.i
+	@echo ... Snake.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

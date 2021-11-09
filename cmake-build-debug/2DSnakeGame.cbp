@@ -5,7 +5,7 @@
 		<Option title="2DSnakeGame"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\SFML\;CMake Files\..\..\..\..\..\SFML\lib\;CMake Files\..\..\..\..\..\SFML\lib\cmake\;CMake Files\..\..\..\..\..\SFML\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug"/>
@@ -24,6 +24,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="C:/SFML/include"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
@@ -45,6 +47,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DSFML_STATIC"/>
+					<Add directory="C:/SFML/include"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
@@ -80,11 +84,47 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Bait.cpp">
+			<Option target="2DSnakeGame"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Bait.h">
+			<Option target="2DSnakeGame"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game.cpp">
+			<Option target="2DSnakeGame"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game.h">
+			<Option target="2DSnakeGame"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake.cpp">
+			<Option target="2DSnakeGame"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake.h">
+			<Option target="2DSnakeGame"/>
+		</Unit>
 		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/main.cpp">
 			<Option target="2DSnakeGame"/>
 		</Unit>
 		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/../../../../../SFML/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\SFML\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/../../../../../SFML/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\SFML\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/../../../../../SFML/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\SFML\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/../../../../../SFML/lib/cmake/SFML/SFMLStaticTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\SFML\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/../../../../../SFML/lib/cmake/SFML/SFMLStaticTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\SFML\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/../../../../../SFML/lib/cmake/SFML/SFMLStaticTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\SFML\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

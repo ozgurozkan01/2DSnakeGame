@@ -1,6 +1,17 @@
 #include <iostream>
+#include "SFML/Graphics.hpp"
+#include "Game.h"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+
+int main()
+{
+    srand(time(NULL));
+    Game game;
+
+    while(game.IsOpen())
+    {
+        game.Update();
+
+        game.Render();
+    }
 }

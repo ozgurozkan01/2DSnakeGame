@@ -8,12 +8,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Bait.cpp" "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir/Bait.cpp.obj"
+  "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game.cpp" "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir/Game.cpp.obj"
+  "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake.cpp" "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir/Snake.cpp.obj"
   "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/main.cpp" "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "SFML_STATIC"
+  )
+
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "C:/SFML/include"
   )
 
 # The set of dependency files which are needed:
