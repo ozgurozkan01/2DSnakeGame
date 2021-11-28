@@ -3,7 +3,7 @@ project(2DSnakeGame)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(2DSnakeGame main.cpp Game.cpp Game.h Snake.cpp Snake.h Bait.cpp Bait.h)
+add_executable(2DSnakeGame main.cpp Game.cpp Game.h Snake.cpp Snake.h Bait.cpp Bait.h Snake_Part.cpp Snake_Part.h Game_Block.cpp Game_Block.h)
 
 set(SFML_STATIC_LIBRARIES TRUE)
 

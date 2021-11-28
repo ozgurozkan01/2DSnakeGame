@@ -1,6 +1,4 @@
-//
-// Created by ozgur on 10/16/2021.
-//
+
 
 #ifndef INC_2DSNAKEGAME_BAIT_H
 #define INC_2DSNAKEGAME_BAIT_H
@@ -10,14 +8,17 @@ class Bait {
 public:
     sf::RectangleShape shape;
 
-public:
-
-    void InitShape();
+    int x_bait, y_bait;
 
     Bait()
     {
         InitShape();
     }
+
+
+    void InitShape();
+    void BaitPosition();
+
 };
 
 

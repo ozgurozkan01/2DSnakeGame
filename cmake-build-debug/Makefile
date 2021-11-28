@@ -176,6 +176,30 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+Game_Block.obj: Game_Block.cpp.obj
+.PHONY : Game_Block.obj
+
+# target to build an object file
+Game_Block.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.obj
+.PHONY : Game_Block.cpp.obj
+
+Game_Block.i: Game_Block.cpp.i
+.PHONY : Game_Block.i
+
+# target to preprocess a source file
+Game_Block.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.i
+.PHONY : Game_Block.cpp.i
+
+Game_Block.s: Game_Block.cpp.s
+.PHONY : Game_Block.s
+
+# target to generate assembly for a file
+Game_Block.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.s
+.PHONY : Game_Block.cpp.s
+
 Snake.obj: Snake.cpp.obj
 .PHONY : Snake.obj
 
@@ -199,6 +223,30 @@ Snake.s: Snake.cpp.s
 Snake.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Snake.cpp.s
 .PHONY : Snake.cpp.s
+
+Snake_Part.obj: Snake_Part.cpp.obj
+.PHONY : Snake_Part.obj
+
+# target to build an object file
+Snake_Part.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.obj
+.PHONY : Snake_Part.cpp.obj
+
+Snake_Part.i: Snake_Part.cpp.i
+.PHONY : Snake_Part.i
+
+# target to preprocess a source file
+Snake_Part.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.i
+.PHONY : Snake_Part.cpp.i
+
+Snake_Part.s: Snake_Part.cpp.s
+.PHONY : Snake_Part.s
+
+# target to generate assembly for a file
+Snake_Part.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\2DSnakeGame.dir\build.make CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.s
+.PHONY : Snake_Part.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -239,9 +287,15 @@ help:
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
+	@echo ... Game_Block.obj
+	@echo ... Game_Block.i
+	@echo ... Game_Block.s
 	@echo ... Snake.obj
 	@echo ... Snake.i
 	@echo ... Snake.s
+	@echo ... Snake_Part.obj
+	@echo ... Snake_Part.i
+	@echo ... Snake_Part.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

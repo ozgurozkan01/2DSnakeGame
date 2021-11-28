@@ -1,22 +1,37 @@
-//
-// Created by ozgur on 10/16/2021.
-//
+
 
 #ifndef INC_2DSNAKEGAME_SNAKE_H
 #define INC_2DSNAKEGAME_SNAKE_H
 #include "SFML/Graphics.hpp"
 
+class Snake_Part;
+class Bait;
+
+#include "Snake_Part.h"
+#include "Bait.h"
 
 class Snake {
 public:
-    sf::RectangleShape shape;
 
-    void InitShape();
+    Snake_Part* snakePart[647];
 
-    Snake()
-    {
-        InitShape();
-    }
+    int x_snake_part[647];
+    int y_snake_part[647];
+
+    int init_size = 2;
+    bool movement;
+
+    sf::Time t;
+    sf::Clock c;
+
+    void CreateSnakeParts();
+    void Delay();
+    void InitPosition();
+    void SnakePartPosition();
+    void SnakeMovement();
+    void UpdatePosition();
+    void UpdateBorderPosition();
+    void EatBait(Bait* bait);
 
 };
 

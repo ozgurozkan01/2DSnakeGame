@@ -1,50 +1,48 @@
-//
-// Created by ozgur on 10/16/2021.
-//
 
 #include "Game.h"
 #include "iostream"
 
-void Game::InitWindow() {
+void Game::InitWindow()
+{
     this->window = new sf::RenderWindow(sf::VideoMode(900, 450), "Snake Game", sf::Style::Titlebar | sf::Style::Close);
     this->window->setFramerateLimit(60);
-
 }
 
-void Game::InitPositions()
-{
-    for(int i = 0; i<3; i++)
-    {
-        if(i==0)
-        {
-            SX[0]= XS;
-            SY[0]= YS;
-        }
-        else if(i==1)
-        {
-            SX[1]= XS;
-            SY[1]= YS;
-        }
 
-        else if(i==2)
-        {
-            SX[2]= SX[1]-25;
-            SY[2]= YS;
-        }
-    }
+void Game::CreateSnake()
+{
+    snake = new Snake();
+}
+
+void Game::CreateGameBlock()
+{
+    gameBlock = new Game_Block();
+}
+
+void Game::CreateBait()
+{
+    bait = new Bait();
 }
 
 
 Game::Game()
 {
     this->InitWindow();
-    this->InitPositions();
+    this->snake->InitPosition();
+    this->snake->CreateSnakeParts();
     this->CreateSnake();
+    this->CreateGameBlock();
 }
 
 Game::~Game()
 {
     delete this->window;
+    delete this->bait;
+    delete this->gameBlock;
+    for(int i = 0; i<snake->init_size+1; i++)
+    {
+        delete this->snake->snakePart[i];
+    }
 }
 
 bool const Game::IsOpen()
@@ -52,7 +50,7 @@ bool const Game::IsOpen()
     return this->window->isOpen();
 }
 
-void Game::poolEvent()
+void Game::PoolEvent()
 {
     while(window->pollEvent(evnt)){
         switch (evnt.type)
@@ -70,137 +68,54 @@ void Game::poolEvent()
     }
 }
 
-void Game::CreateSnake()
+void Game::DrawBlocks()
 {
-    for(int i=0; i<100; i++)
+    for(int i = 0; i < gameBlock->verticalline; i++)
     {
-        snake[i] = new Snake;
+        for(int j = 0; j < gameBlock->horizonaline; j++)
+        {
+            gameBlock->shape->setPosition(sf::Vector2f( j * gameBlock->verticalline, i * gameBlock->horizonaline));
+            window->draw(*gameBlock->shape);
+        }
     }
 }
 
-void Game::SnakePosition()
-{
-    for(int i = 0; i<3; i++)
-    {
-        snake[i]->shape.setPosition(SX[i],SY[i]);
-    }
-}
 void Game::DrawSnake()
 {
-    for(int i = 0; i<3; i++)
+    for(int i = 0; i<snake->init_size+1; i++)
     {
-        this->window->draw(snake[i]->shape);
+        this->window->draw(snake->snakePart[i]->shape);
     }
-}
-
-void Game::SnakeMovement()
-{
-    if(movement)
-    {
-        c.restart();
-        UpdatePosition();
-
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
-        {
-            YS += 25;
-            SY[0] = YS;
-            movement = false;
-        }
-        else if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-        {
-            XS -= 25;
-            SX[0] = XS;
-            movement = false;
-        }
-        else if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-        {
-            XS += 25;
-            SX[0] = XS;
-            movement = false;
-        }
-        else if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
-        {
-            YS -= 25;
-            SY[0] = YS;
-            movement = false;
-        }
-        movement = false;
-    }
-
-}
-
-void Game::Delay()
-{
-    t = c.getElapsedTime();
-    if(!movement)
-    {
-        if(operator>(t,sf::seconds(0.1)))
-            movement = true;
-    }
-}
-
-void Game::UpdatePosition()
-{
-    if(movement)
-    {
-        for(int i = 2; i>0; i--)
-        {
-            SX[i] = SX[i-1];
-            SY[i] = SY[i-1];
-        }
-    }
-}
-
-void Game::CreateBait()
-{
-    bait[0] = new Bait;
-}
-
-void Game::BaitPosition()
-{
-
-    XB = (rand() % 30) * 25;
-    YB = (rand() % 15) * 25;
-
-    if(sizeof(bait))
-    bait[0]->shape.setPosition(XB, YB);
 }
 
 void Game::DrawBait()
 {
-    this->window->draw(bait[0]->shape);
-}
-
-void Game::EatBait()
-{
-    if(SX[0] == XB && SY[0] == YB)
-    {
-        XB = (rand() % 30) * 25;
-        YB = (rand() % 15) * 25;
-    }
+    this->window->draw(bait->shape);
 }
 
 
 void Game::Update()
 {
-    this->poolEvent();
-    this->SnakePosition();
-    this->SnakeMovement();
-    this->Delay();
+    this->PoolEvent();
 
-    this->EatBait();
+    this->snake->Delay();
+    this->snake->SnakePartPosition();
+    this->snake->UpdateBorderPosition();
+    this->snake->SnakeMovement();
+    this->snake->EatBait(bait);
 
     this->CreateBait();
-    this->BaitPosition();
+    this->bait->BaitPosition();
 }
-
 
 void Game::Render()
 {
     this->window->clear();
+    this->DrawBlocks();
     this->DrawSnake();
     this->DrawBait();
     this->window->display();
+
 }
 
 

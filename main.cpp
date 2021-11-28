@@ -14,4 +14,6 @@ int main()
 
         game.Render();
     }
+
+    return 0;
 }

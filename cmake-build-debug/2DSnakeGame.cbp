@@ -96,10 +96,22 @@
 		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game.h">
 			<Option target="2DSnakeGame"/>
 		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game_Block.cpp">
+			<Option target="2DSnakeGame"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game_Block.h">
+			<Option target="2DSnakeGame"/>
+		</Unit>
 		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake.cpp">
 			<Option target="2DSnakeGame"/>
 		</Unit>
 		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake.h">
+			<Option target="2DSnakeGame"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake_Part.cpp">
+			<Option target="2DSnakeGame"/>
+		</Unit>
+		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake_Part.h">
 			<Option target="2DSnakeGame"/>
 		</Unit>
 		<Unit filename="C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/main.cpp">

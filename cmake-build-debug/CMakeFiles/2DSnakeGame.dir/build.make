@@ -121,12 +121,42 @@ CMakeFiles/2DSnakeGame.dir/Bait.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2DSnakeGame.dir/Bait.cpp.s"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\Bait.cpp -o CMakeFiles\2DSnakeGame.dir\Bait.cpp.s
 
+CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.obj: CMakeFiles/2DSnakeGame.dir/flags.make
+CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.obj: CMakeFiles/2DSnakeGame.dir/includes_CXX.rsp
+CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.obj: ../Snake_Part.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\2DSnakeGame.dir\Snake_Part.cpp.obj -c C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\Snake_Part.cpp
+
+CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\Snake_Part.cpp > CMakeFiles\2DSnakeGame.dir\Snake_Part.cpp.i
+
+CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\Snake_Part.cpp -o CMakeFiles\2DSnakeGame.dir\Snake_Part.cpp.s
+
+CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.obj: CMakeFiles/2DSnakeGame.dir/flags.make
+CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.obj: CMakeFiles/2DSnakeGame.dir/includes_CXX.rsp
+CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.obj: ../Game_Block.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\2DSnakeGame.dir\Game_Block.cpp.obj -c C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\Game_Block.cpp
+
+CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\Game_Block.cpp > CMakeFiles\2DSnakeGame.dir\Game_Block.cpp.i
+
+CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\Game_Block.cpp -o CMakeFiles\2DSnakeGame.dir\Game_Block.cpp.s
+
 # Object files for target 2DSnakeGame
 2DSnakeGame_OBJECTS = \
 "CMakeFiles/2DSnakeGame.dir/main.cpp.obj" \
 "CMakeFiles/2DSnakeGame.dir/Game.cpp.obj" \
 "CMakeFiles/2DSnakeGame.dir/Snake.cpp.obj" \
-"CMakeFiles/2DSnakeGame.dir/Bait.cpp.obj"
+"CMakeFiles/2DSnakeGame.dir/Bait.cpp.obj" \
+"CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.obj" \
+"CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.obj"
 
 # External object files for target 2DSnakeGame
 2DSnakeGame_EXTERNAL_OBJECTS =
@@ -135,6 +165,8 @@ CMakeFiles/2DSnakeGame.dir/Bait.cpp.s: cmake_force
 2DSnakeGame.exe: CMakeFiles/2DSnakeGame.dir/Game.cpp.obj
 2DSnakeGame.exe: CMakeFiles/2DSnakeGame.dir/Snake.cpp.obj
 2DSnakeGame.exe: CMakeFiles/2DSnakeGame.dir/Bait.cpp.obj
+2DSnakeGame.exe: CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.obj
+2DSnakeGame.exe: CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.obj
 2DSnakeGame.exe: CMakeFiles/2DSnakeGame.dir/build.make
 2DSnakeGame.exe: C:/SFML/lib/libsfml-system-s-d.a
 2DSnakeGame.exe: C:/SFML/lib/libsfml-graphics-s-d.a
@@ -152,7 +184,7 @@ CMakeFiles/2DSnakeGame.dir/Bait.cpp.s: cmake_force
 2DSnakeGame.exe: CMakeFiles/2DSnakeGame.dir/linklibs.rsp
 2DSnakeGame.exe: CMakeFiles/2DSnakeGame.dir/objects1.rsp
 2DSnakeGame.exe: CMakeFiles/2DSnakeGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable 2DSnakeGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ozgur\Documents\C++Projects\2DSnakeGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable 2DSnakeGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\2DSnakeGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

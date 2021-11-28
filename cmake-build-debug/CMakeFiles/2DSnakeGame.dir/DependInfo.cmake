@@ -10,7 +10,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Bait.cpp" "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir/Bait.cpp.obj"
   "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game.cpp" "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir/Game.cpp.obj"
+  "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game_Block.cpp" "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir/Game_Block.cpp.obj"
   "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake.cpp" "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir/Snake.cpp.obj"
+  "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake_Part.cpp" "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir/Snake_Part.cpp.obj"
   "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/main.cpp" "C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/cmake-build-debug/CMakeFiles/2DSnakeGame.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

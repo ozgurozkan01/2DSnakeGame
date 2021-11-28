@@ -1,6 +1,3 @@
-//
-// Created by ozgur on 10/16/2021.
-//
 
 #ifndef INC_2DSNAKEGAME_GAME_H
 #define INC_2DSNAKEGAME_GAME_H
@@ -8,35 +5,25 @@
 
 class Bait;
 class Snake;
-class Tail;
+class Game_Block;
+
 
 #include "Bait.h"
 #include "Snake.h"
+#include "Game_Block.h"
 
 class Game {
 public:
     sf::RenderWindow * window;
     sf::Event evnt;
 
-    sf::Clock c;
-    sf::Time t;
+    Game_Block* gameBlock;
 
     //SNAKE
-
-    Snake* snake[100];
-    bool movement = true;
-
-    int max_bait = 1;
-
-    int XS=250, YS=250;
-    int XB, YB;
-
-    int SX[100];
-    int SY[100];
-
+    Snake* snake;
 
     //BAIT
-    Bait* bait[1];
+    Bait* bait;
 
 public:
 
@@ -44,25 +31,21 @@ public:
     virtual ~Game();
 
     void InitWindow();
-    void InitPositions();
-    void poolEvent();
+    void PoolEvent();
     bool const IsOpen();
+    void DrawBlocks();
     void Update();
     void Render();
-    void Delay();
+    void CreateGameBlock();
+
 
     //SNAKE
     void CreateSnake();
-    void SnakePosition();
     void DrawSnake();
-    void SnakeMovement();
-    void UpdatePosition();
-    void EatBait();
 
     // BAIT
     void CreateBait();
     void DrawBait();
-    void BaitPosition();
 };
 
 
