@@ -676,31 +676,7 @@ SFML/Config.hpp
 
 C:/SFML/include/SFML/Window/WindowStyle.hpp
 
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Bait.cpp
-Bait.h
 C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Bait.h
-
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Bait.h
-SFML/Graphics.hpp
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/SFML/Graphics.hpp
-
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game.cpp
-Game.h
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game.h
-iostream
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/iostream
-
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game.h
-SFML/Graphics.hpp
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/SFML/Graphics.hpp
-Bait.h
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Bait.h
-Snake.h
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake.h
-Game_Block.h
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game_Block.h
-
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game_Block.h
 SFML/Graphics.hpp
 C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/SFML/Graphics.hpp
 
@@ -716,19 +692,7 @@ C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake_Part.h
 Bait.h
 C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Bait.h
 
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake_Part.cpp
-Snake_Part.h
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake_Part.h
-
 C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Snake_Part.h
 SFML/Graphics.hpp
 C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/SFML/Graphics.hpp
-
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/main.cpp
-iostream
--
-SFML/Graphics.hpp
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/SFML/Graphics.hpp
-Game.h
-C:/Users/ozgur/Documents/C++Projects/2DSnakeGame/Game.h
 

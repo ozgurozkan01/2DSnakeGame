@@ -6,7 +6,7 @@
 #define INC_2DSNAKEGAME_SNAKE_PART_H
 #include "SFML/Graphics.hpp"
 
-class Snake_Part {
+class Snake_Part{
 public:
     sf::RectangleShape shape;
 

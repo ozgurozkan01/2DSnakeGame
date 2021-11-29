@@ -1,24 +1,26 @@
 
 #include "Snake.h"
 
-void Snake::InitPosition()
-{
-    x_snake_part[0] = 250;
-    y_snake_part[0] = 250;
-
-   for(int i = init_size; i>0; i--)
-    {
-        x_snake_part[i] = x_snake_part[i - 1] - 25;
-        y_snake_part[i] = y_snake_part[i - 1];
-    }
-}
 
 void Snake::CreateSnakeParts()
 {
     for(int i = 0; i < 647; i++)
     {
-        snakePart[i] = new Snake_Part();
+        snakePart[i] = new Snake_Part;
     }
+}
+
+void Snake::InitPosition()
+{
+    x_snake_part[0] = 250;
+    y_snake_part[0] = 250;
+
+    x_snake_part[1] = 225;
+    y_snake_part[1] = 250;
+
+    x_snake_part[2] = 200;
+    y_snake_part[2] = 250;
+
 }
 
 void Snake::SnakePartPosition()
@@ -65,7 +67,7 @@ void Snake::Delay()
 
     if(!movement)
     {
-        if(operator>(t,sf::seconds(0.01)))
+        if(operator>(t,sf::seconds(0.15)))
         {
             movement = true;
         }
@@ -105,18 +107,18 @@ void Snake::UpdateBorderPosition()
 
 void Snake::EatBait(Bait* bait)
 {
-    if(bait->x_bait == x_snake_part[0] && bait->y_bait == y_snake_part[0])
+    if(bait->random_x_bait == x_snake_part[0] && bait->random_y_bait == y_snake_part[0])
     {
         init_size++;
-        bait->x_bait = (rand() % 15) * 25;
-        bait->y_bait = (rand() % 30) * 25;
+        bait->random_x_bait = (rand() % 35) * 25;
+        bait->random_y_bait = (rand() % 17) * 25;
 
-        for(int i = 0; i < init_size+1; i++)
+       for(int i = 0; i < init_size+1; i++)
         {
-            if(bait->x_bait == x_snake_part[i] && bait->y_bait == y_snake_part[i])
+            if(bait->random_x_bait == x_snake_part[i] && bait->random_y_bait == y_snake_part[i])
             {
-                bait->x_bait = (rand() % 15) * 25;
-                bait->y_bait = (rand() % 30) * 25;
+                bait->random_x_bait = (rand() % 35) * 25;
+                bait->random_y_bait = (rand() % 17) * 25;
             }
         }
     }

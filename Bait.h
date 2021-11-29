@@ -8,7 +8,7 @@ class Bait {
 public:
     sf::RectangleShape shape;
 
-    int x_bait, y_bait;
+    int random_x_bait, random_y_bait;
 
     Bait()
     {
@@ -17,8 +17,8 @@ public:
 
 
     void InitShape();
+    void AssingRandomPosition();
     void BaitPosition();
-
 };
 
 

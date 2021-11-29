@@ -9,5 +9,5 @@ void Snake_Part::InitShape()
     shape.setSize(sf::Vector2f(25, 25));
     shape.setFillColor(sf::Color::Red);
     shape.setOutlineThickness(1);
-    shape.setOutlineColor(sf::Color::White);
+    shape.setOutlineColor(sf::Color::Cyan);
 }

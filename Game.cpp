@@ -28,17 +28,18 @@ void Game::CreateBait()
 Game::Game()
 {
     this->InitWindow();
-    this->snake->InitPosition();
-    this->snake->CreateSnakeParts();
-    this->CreateSnake();
     this->CreateGameBlock();
+    this->CreateBait();
+    this->bait->AssingRandomPosition();
+    this->CreateSnake();
+    this->snake->InitPosition();
 }
 
 Game::~Game()
 {
     delete this->window;
-    delete this->bait;
     delete this->gameBlock;
+    delete this->bait;
     for(int i = 0; i<snake->init_size+1; i++)
     {
         delete this->snake->snakePart[i];
@@ -74,15 +75,15 @@ void Game::DrawBlocks()
     {
         for(int j = 0; j < gameBlock->horizonaline; j++)
         {
-            gameBlock->shape->setPosition(sf::Vector2f( j * gameBlock->verticalline, i * gameBlock->horizonaline));
-            window->draw(*gameBlock->shape);
+            gameBlock->shape.setPosition(sf::Vector2f( j * 25, i * 25));
+            window->draw(gameBlock->shape);
         }
     }
 }
 
 void Game::DrawSnake()
 {
-    for(int i = 0; i<snake->init_size+1; i++)
+    for(int i = 0; i< snake->init_size+1; i++)
     {
         this->window->draw(snake->snakePart[i]->shape);
     }
@@ -97,23 +98,22 @@ void Game::DrawBait()
 void Game::Update()
 {
     this->PoolEvent();
-
     this->snake->Delay();
-    this->snake->SnakePartPosition();
-    this->snake->UpdateBorderPosition();
-    this->snake->SnakeMovement();
-    this->snake->EatBait(bait);
 
-    this->CreateBait();
     this->bait->BaitPosition();
+
+    this->snake->SnakePartPosition();
+    this->snake->SnakeMovement();
+    this->snake->UpdateBorderPosition();
+    this->snake->EatBait(bait);
 }
 
 void Game::Render()
 {
     this->window->clear();
     this->DrawBlocks();
-    this->DrawSnake();
     this->DrawBait();
+    this->DrawSnake();
     this->window->display();
 
 }

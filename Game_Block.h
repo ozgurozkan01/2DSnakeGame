@@ -9,7 +9,7 @@
 class Game_Block {
 public:
 
-    sf::RectangleShape* shape;
+    sf::RectangleShape shape;
 
     int verticalline = 18, horizonaline = 36;
 
